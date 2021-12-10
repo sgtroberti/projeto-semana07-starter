@@ -1,0 +1,26 @@
+@import "_variables", "_styles";
+
+.about {
+  padding: 93px 16px 0 16px;
+  color: white;
+
+  &-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  &-title {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+  }
+
+  &-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.44px;
+  }
+}
