@@ -1,13 +1,27 @@
 @import "_variables", "_styles";
 
 .about {
-  padding: 93px 16px 0 16px;
+  padding-top: 93px;
   color: white;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 996px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 133px;
+  }
 
   &-image {
     width: 100%;
     height: auto;
     border-radius: 8px;
+
+    @media (min-width: 996px) {
+      max-width: 50%;
+      max-height: 547px;
+      margin-right: 140px;
+    }
   }
 
   &-title {
@@ -15,6 +29,15 @@
     font-size: 34px;
     line-height: 40px;
     letter-spacing: 0.25px;
+
+    @media (min-width: 996px) {
+      font-weight: 700;
+      line-height: 70px;
+      font-size: 60px;
+      letter-spacing: -0.5px;
+      margin-top: 0px;
+      margin-bottom: 24px;
+    }
   }
 
   &-text {
@@ -22,5 +45,98 @@
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 0.44px;
+  }
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-bottom: 10px;
+
+  @media (min-width: 996px) {
+    padding: 67px 23px 112px 23px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: normal;
+    text-align: center;
+
+    @media (min-width: 996px) {
+      margin-bottom: 60px;
+      font-size: 34px;
+      line-height: 40px;
+      font-weight: normal;
+    }
+  }
+
+  &-group {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 996px) {
+      flex-direction: row;
+    }
+
+    &-card {
+      background-color: $colorRellenos;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 24px;
+
+      @media (min-width: 996px) {
+        padding: 24px;
+      }
+
+      &__first {
+        @media (min-width: 996px) {
+          margin-right: 24px;
+        }
+      }
+
+      &__last {
+        @media (min-width: 996px) {
+          margin-left: 24px;
+        }
+      }
+
+      &-image {
+        margin-left: 12.5px;
+        margin-top: 6.25px;
+        margin-bottom: 10px;
+      }
+
+      &-title {
+        margin: 0;
+        margin-top: 16.5px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+
+        @media (min-width: 996px) {
+          letter-spacing: 0.25px;
+          font-size: 34px;
+          line-height: 40px;
+        }
+      }
+
+      &-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+
+        @media (min-width: 996px) {
+          font-size: 16px;
+          line-height: 28px;
+          letter-spacing: 0.44px;
+        }
+      }
+    }
   }
 }
