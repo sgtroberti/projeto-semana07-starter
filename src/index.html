@@ -31,13 +31,16 @@
                 fill="white"
               />
             </svg>
-            <div class="navbar-links">
+
+            <div id="menu" class="navbar-links">
               <a class="navbar-link" href="./index.html">Início</a>
               <a class="navbar-link" href="./about.html">Sobre mim</a>
-              <a class="navbar-link" href="">Contato</a>
+              <a class="navbar-link" href="./contact.html">Contato</a>
             </div>
-            <button class="burger-button">
+            <button id="menu-button" class="burger-button">
               <svg
+                id="burger"
+                class="show"
                 width="18"
                 height="14"
                 viewBox="0 0 18 14"
@@ -52,6 +55,23 @@
                   stroke-linejoin="round"
                 />
               </svg>
+              <svg
+                id="close"
+                class="hide"
+                width="14"
+                height="16"
+                viewBox="0 0 14 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 2.12305L13 14.123L10.5 11.623L8 9.12305M1 14.123L13 1.87695"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </button>
           </div>
         </nav>
@@ -60,7 +80,11 @@
             Sou <span class="my-info-title-name">Guilherme Roberti</span>
           </h1>
           <div class="my-info-buttons">
-            <button class="button button__solid">Entrar em contato</button>
+            <a href="./contact.html"
+              ><button class="button button__solid">
+                Entrar em contato
+              </button></a
+            >
             <button class="button button__outlined">
               <svg
                 width="14"
@@ -141,7 +165,7 @@
             </div>
             <div class="footer-column">
               <p class="footer-column-name">Contato</p>
-              <a class="footer-column-link" href="#">Email</a>
+              <a class="footer-column-link" href="./contact.html">Email</a>
             </div>
             <div class="footer-column">
               <p class="footer-column-name">Social</p>
@@ -167,5 +191,6 @@
         </div>
       </footer>
     </main>
+    <script src="./main.js"></script>
   </body>
 </html>

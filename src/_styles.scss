@@ -17,6 +17,10 @@ button {
   background-color: transparent;
 }
 
+.burger-cancel-button {
+  display: none;
+}
+
 .navbar {
   border-bottom: 1px solid #26292d;
   position: fixed;
@@ -25,8 +29,25 @@ button {
   right: 0;
   z-index: 999;
   background: $backgroundColor;
+
   &-links {
     display: none;
+
+    &__active {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 57px;
+      background-color: $backgroundColor;
+      width: 100%;
+      height: 100vh;
+      padding-top: 28.5px;
+
+      & a {
+        color: white;
+        margin-bottom: 40px;
+      }
+    }
   }
 
   @media (min-width: 992px) {
@@ -169,4 +190,12 @@ button {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
 }
