@@ -36,7 +36,7 @@ button {
     &__active {
       display: flex;
       flex-direction: column;
-      position: absolute;
+      position: fixed;
       top: 57px;
       background-color: $backgroundColor;
       width: 100%;
